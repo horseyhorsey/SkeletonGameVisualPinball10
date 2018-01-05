@@ -1,0 +1,92 @@
+Sequence:
+    - Combo:
+        Text:
+            - "MOcean"
+            - ""
+            - "Presents"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 3.0    
+    - Combo:
+        Text:
+            - "PyProcGameHD"
+            - ""
+            - "SkeletonGame"
+        Font: large
+        Animation: chrome
+        FontStyle: blueish
+        lampshow: attract_show_2
+        duration: 2.5
+    - Animation:
+        Name: explosion        
+    - Combo:
+        Text:
+            - "VP10 Default Table"
+            - ""
+            - " By UncleWilly"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.5   
+    - Combo:
+        Text:
+            - "Rules & Retheme"
+            - ""
+            - " By HorsePin"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.5 
+    - Combo:
+        Text:
+            - "Conjoined"
+            - "  Ape"
+            - "Skeleton 0.7"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 3.0          
+    - HighScores:
+        Font: large
+        Background: chrome
+        Order:
+            - player
+            - category
+            - score
+        duration: 1.2 
+    - Combo:
+        Text:
+            - "Special Thanks"
+            - ""
+            - "To"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.0  
+    - Combo:
+        Text:
+            - "Fuzzel"
+            - "Toxie"
+            - "VPForums"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.0      
+    - Combo:
+        Text:
+            - "Gerry Stellenberg"
+            - "MOcean"
+            - "Rosh"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.0   
+    - Combo:
+        Text:
+            - "Last not least"
+            - "Adam Preble"
+        Font: large
+        Animation: dark_chrome
+        lampshow: attract_show_1
+        duration: 2.0           

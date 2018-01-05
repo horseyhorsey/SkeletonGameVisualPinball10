@@ -1,0 +1,220 @@
+UserInterface:
+  splash_screen: 'loading.png'
+  progress_bar:
+      x_center: 0.5
+      y_center: 0.25
+      width: 0.9
+      height: 0.10
+      border: 
+        - 255
+        - 0
+        - 255
+      fill: 
+        - 0
+        - 255
+        - 0
+  text:
+    color: [0,0,128] # no 0/255 Red, 0/255 Green, 128/255 Blue
+    y_center: 0.3
+LampShows:
+- key: 'attract_show_1'
+  file: 'attract_show_1.lampshow'  
+- key: 'attract_show_2'
+  file: 'attract_show_2.lampshow'  
+Animations:
+  # SG Requirement: the 'missing' entry is the entry used when the image can't be found; helps debugging
+- key: missing
+  file: missing.png
+- key: 't800-war'
+  file: 'explosion1_64x48/explosion1_%04d.png'
+  frame_time : 2
+- key: 'explosion'
+  file: 'explosion-%02d.png' # this naming convention will load a sequence explosion-00.png through explosion-99.png
+  frame_time : 4 # # of frames to show before next frame (@30fps)
+  x_loc: 120 # move the object 100 dots (not pixels!) in
+  y_loc: 30 # 20 dot offest from the top
+  # composite_op: 'magentasrc'  
+- key: 'gameover'
+  file: 'fireloop1_64x64/50 frames/fire1_ %02d.png'
+  frame_time : 2
+  repeatAnim : True
+- key : 'flames'
+  file: 'flames/flame_%03d.png'
+  frame_time : 3
+  repeatAnim : True
+  composite_op: 'blacksrc' # make the black in the image transparent  
+- key : 'SkeleDance'
+  file: 'SkeleDance/Skele%03d.png'
+  frame_time : 1
+  repeatAnim : True    
+- key : 'SkeleEnd'
+  file: 'SkeleEnd/SkeleEnd%03d.png'
+  frame_time : 1
+  repeatAnim : False    
+- key : 'SkeleRamp'
+  file: 'SkeleRamp/SkeleRamp%03d.png'
+  frame_time : 1
+  repeatAnim : False   
+- key : 'SkeleMulti'
+  file: 'SkeleMulti/SkeleMulti%03d.png'
+  frame_time : 1
+  repeatAnim : False     
+#   # y_loc: -30
+- key: 'chrome'
+  file: 'light_texture.png'  
+- key: 'dark_chrome'
+  file: 'texture.png'  
+Fonts:
+  FontStyles:
+    # SG Recommended: default style is the style when no specific style is specified
+    # If you don't define this the system default is intentionally noticable
+  - key: default
+    interior_color: [200,200,20]
+    line_width: 1
+    line_color: [20,20,20]
+    # SG Recommended:  status font is for status messages
+  - key: status_font_style
+    interior_color: [200,200,20]
+    line_width: 1
+    line_color: [20,20,20]
+    # anything else defined is for your own personal use
+  - key: score_font_style
+    interior_color: [255, 255, 128]
+    line_width: 1
+    line_color: [128, 128, 0]
+  - key: blueish
+    interior_color: [0,0,255]
+    line_width: 1
+    line_color: [0,0,128]
+  HDFonts:
+  - key: 'default'
+    file: 'Oswald-DemiBold.ttf'
+    size: 15  
+  - key: 'Tiny7'
+    file: 'Oswald-Heavy.ttf'
+    size: 14
+    # NOTE: if you want to use a system font, instead of file use the following tag srtle
+    # systemName: "consolas"
+  - key: 'Font_7x5'
+    file: 'Oswald-Heavy.ttf'
+    size: 14
+  - key: 'Font_14x10'
+    file: 'Oswald-Heavy.ttf'
+    size: 20
+  - key: 'SM20aa'
+    file: 'Oswald-Heavy.ttf'
+    size: 20
+  - key: 'mono-tiny'
+    file: 'Oswald-Heavy.ttf'
+    size: 18
+  - key: 'mono-micro'
+    file: 'Oswald-Heavy.ttf'
+    size: 12
+  - key: 'settings-font'
+    file: 'Oswald-Heavy.ttf'
+    size: 16
+  - key: 'settings-font-small'
+    file: 'Oswald-Heavy.ttf'
+    size: 15
+  - key: 'tiny'
+    file: 'Oswald-Heavy.ttf'
+    size: 8
+  - key: 'small'
+    file: 'Oswald-Heavy.ttf'
+    size: 12
+  - key: 'med'
+    file: 'Oswald-Heavy.ttf'
+    size: 15
+  - key: 'large'
+    file: 'Oswald-Heavy.ttf'
+    size: 20
+  - key: 'score_1p'
+    file: 'Oswald-Heavy.ttf'
+    size: 48
+  - key: 'score_activeL'
+    file: 'Oswald-Heavy.ttf'
+    size: 48
+  - key: 'score_activeM'
+    file: 'Oswald-Medium.ttf'
+    size: 40
+  - key: 'score_activeS'
+    file: 'Oswald-Light.ttf'
+    size: 32
+  - key: 'score_inactive'
+    file: 'Oswald-Light.ttf'
+    size: 32
+  - key: 'score_sub'
+    file: 'Oswald-Heavy.ttf'
+    size: 14
+  - key: 'default_msg'
+    file: 'Oswald-Heavy.ttf'
+    size: 15
+  - key: 'tilt-font-small'
+    file: 'Oswald-Heavy.ttf'
+    size: 15
+  - key: 'tilt-font-big'
+    file: 'Oswald-Heavy.ttf'
+    size: 18
+  - key: 'high_score_entry_inits'
+    file: 'Oswald-Heavy.ttf'
+    size: 12
+  - key: 'high_score_entry_msg'
+    file: 'Oswald-Heavy.ttf'
+    size: 12
+  - key: 'high_score_entry_letters'
+    file: 'Oswald-Heavy.ttf'
+    size: 12
+  DMDFonts:
+  # Example follows; I don't actually use any, but this is how you would.
+  # - key: 'CC_9px'
+  #   file: "Font_CC_9px_az.dmd"
+Audio:
+  Music:
+    - key: 'base-music-bgm'
+      file: 'Criminal.ogg'
+    - key: 'TwoBall'
+      file: 'Criminal2Ball.ogg'
+    - key: 'ThreeBall'
+      file: 'Criminal3Ball.ogg'
+    - key: 'endBall'
+      file: 'CriminalBreak.ogg'         
+  Effects:
+    # - key: 'ball_serve'
+    #   file: 'BallServe.ogg'
+    # - key: 'ball_launch'
+    #   file: 'ballServed.ogg'
+    # - key: 'ball_saved'
+    #   file: 'AutoFire.ogg'
+    - key: 'ball_saved'
+      file: 'AutoFire.ogg'
+    # - key: 'ss_tick'
+    #   file: 'skill_shot_target_move.ogg'
+    # - key: 'ss_hit'
+    #   file: 'TargetHit.ogg'
+    # - key: 'ss_miss'
+    #   file: 'ss_miss.ogg'
+    - key: 'service_save'
+      file: 'accomplish_tune.wav'
+    - key: 'service_previous'
+      file: 'click.wav'
+    - key: 'service_next'
+      file: 'click.wav'
+    - key: 'service_enter'
+      file: 'MENU A_Select.wav'
+    - key: 'service_exit'
+      file: 'MENU A_Back.wav'
+    - key: 'service_cancel'
+      file: 'MESSAGE-B_Decline.wav'
+    - key: 'sling'
+      file: 'MENU B_Select.ogg'   
+    - key: 'target'
+      file: 'MENU B_Back.wav'   
+    - key: 'target_bank'
+      file: 'ALERT_Appear.wav'   
+  Voice:
+    - key: 'ss_successV'
+      file: 'DirectHit1.ogg'
+      volume: 0.8
+    - key: 'ss_missV'
+      file: 'YouMissed2.ogg'
+      volume: 0.8

@@ -1,0 +1,20 @@
+# Ignore compiled
+*.pyc
+
+*.ini
+
+# Assets - Only allow lampshows
+/assets/dmd
+/assets/sound
+/assets/fonts
+
+# Configs
+/config/game_user_data.yaml
+/config/game_user_data.yaml.bak
+/config/game_user_settings.yaml
+/config/game_user_settings.yaml.bak
+/config/game_user_volume.txt
+
+# VP Bits
+/crash.dmp
+/crash.txt
